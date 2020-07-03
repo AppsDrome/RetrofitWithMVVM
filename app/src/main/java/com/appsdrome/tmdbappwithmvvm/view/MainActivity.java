@@ -77,14 +77,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = activityMainBinding.rvMovies;
         movieAdapter = new MovieAdapter(this, movieArrayList);
 
+        //for portrait mode
         if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
 
             recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         } else {
 
-
             recyclerView.setLayoutManager(new GridLayoutManager(this, 4));
-
 
         }
 

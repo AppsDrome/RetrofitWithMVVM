@@ -13,6 +13,7 @@ public interface MovieDbService {
     @GET("movie/popular")
     Call<MovieDbResponse> getPopularMovies(@Query("api_key") String api_key);
 
+
     @GET("movie/popular")
     Call<MovieDbResponse> getPopularMoviesWithPaging(@Query("api_key") String api_key,@Query("page") long page);
 }
